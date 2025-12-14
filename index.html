@@ -12,10 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
+        :root {
+            --cor: #ff7b00; /* Laranja neon */
+            --cor-glow: #ff7b0088;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(150deg, #0a0a0a, #0d0d0d, #1a0033);
+            background: linear-gradient(150deg, #0a0a0a, #0d0d0d, #1a0f00);
             color: white;
             font-family: "Outfit", sans-serif;
             display: flex;
@@ -29,8 +34,8 @@
             width: 140px;
             height: 140px;
             border-radius: 50%;
-            border: 4px solid #7b2fff;
-            box-shadow: 0 0 25px #7b2fff88;
+            border: 4px solid var(--cor);
+            box-shadow: 0 0 25px var(--cor-glow);
             object-fit: cover;
             margin-bottom: 15px;
         }
@@ -67,9 +72,9 @@
         }
 
         .link:hover {
-            background: #7b2fff;
-            border-color: #7b2fff;
-            box-shadow: 0 0 20px #7b2fff99;
+            background: var(--cor);
+            border-color: var(--cor);
+            box-shadow: 0 0 20px var(--cor-glow);
             transform: scale(1.03);
         }
 
@@ -86,8 +91,8 @@
         }
 
         .social-icons a:hover {
-            color: #7b2fff;
-            text-shadow: 0 0 10px #7b2fff;
+            color: var(--cor);
+            text-shadow: 0 0 10px var(--cor);
         }
 
         footer {
@@ -100,10 +105,10 @@
 <body>
 
     <!-- FOTO -->
-    <img class="avatar" src="https://i.imgur.com/N5gf91e.png">
+    <img class="avatar" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
 
     <h1>Carlos Daniel | @cdobeco</h1>
-    <p class="bio">Streamer • Criador de Conteúdo • Comunidade do Beco 💜</p>
+    <p class="bio">Streamer • Criador de Conteúdo • Comunidade do Beco 🔥</p>
 
     <!-- ORDEM EXATA QUE VOCÊ PEDIU -->
 
@@ -122,11 +127,6 @@
         <i class="fa-brands fa-discord"></i> Entrar no Discord da Comunidade
     </a>
 
-     <!-- (6) YouTube -->
-    <a class="link" href="https://www.youtube.com/@cdobeco" target="_blank">
-        <i class="fa-brands fa-youtube"></i> YouTube Principal
-    </a>
-    
     <!-- (7) Canal Secundário -->
     <a class="link" href="https://www.youtube.com/@eucarlin38" target="_blank">
         <i class="fa-solid fa-circle-play"></i> Canal Secundário
@@ -140,6 +140,11 @@
     <!-- (5) TikTok -->
     <a class="link" href="https://www.tiktok.com/@cdobeco" target="_blank">
         <i class="fa-brands fa-tiktok"></i> TikTok Oficial
+    </a>
+
+    <!-- (6) YouTube -->
+    <a class="link" href="https://www.youtube.com/@cdobeco" target="_blank">
+        <i class="fa-brands fa-youtube"></i> YouTube Principal
     </a>
 
     <!-- (8) Kwai -->
